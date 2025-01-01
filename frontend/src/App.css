@@ -1,0 +1,24 @@
+#root {
+
+
+width: 100%;
+
+ 
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+body {
+  direction: rtl;
+}
+
+

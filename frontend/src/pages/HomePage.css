@@ -1,0 +1,3240 @@
+
+html {
+  overflow-y: scroll !important;
+}
+
+body {
+  width: 100vw;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+body.modal-open {
+  padding-right: 17px; /* או הרוחב המדויק של סרגל הגלילה בדפדפן */
+}
+
+
+.site-header {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between; /* מרחיק בין הלוגו לניווט */
+  align-items: center; /* מיישר את הלוגו והניווט אנכית */
+ 
+  padding: 10px 20px;
+  box-sizing: border-box; /* כולל את ה-padding בחישוב הגודל */
+  width: 100vw; /* יש לוודא שהרוחב מתפרש על כל רוחב החלון */
+  height: 120px;
+  margin-top: -10px;
+
+  }
+  
+ .home-page .nav-site {
+    flex: 2;
+    display: flex;
+    justify-content:center;
+    padding: 0;
+    margin: 0;
+    margin-right: 550px;
+  }
+  
+ 
+
+  .home-page .nav-site a,
+.home-page .faq-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #ece5e5;
+  text-decoration: none;
+  padding: 0.5rem 3rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+ 
+
+.home-page .nav-site a:hover {
+
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.home-page .logo-container {
+  flex: 0 1 auto; /* קופסה עבור הלוגו */
+  display: flex;
+  justify-content: flex-start;
+    position: absolute;
+    top: -22px;
+    right: 30px;
+    z-index: 1000; /* מבטיח שהלוגו יהיה מעל התוכן */
+  }
+  
+
+.home-page .site-logo {
+  width: 125px !important;
+  height: 145px !important; /* שומר על יחס הרוחב-גובה */
+  margin-right: 20px ;
+  margin-top: -12px;
+  transition: transform 0.3s ease;
+
+  }
+
+  
+.home-page .site-logo:hover {
+  transform: scale(1.1);
+}
+
+.faq-dropdown-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.home-page .faq-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  background-color: transparent;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 0;
+  min-width: 190px;
+  z-index: 1000;
+}
+
+.home-page .faq-dropdown-menu a {
+  font-size: 1rem !important;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.faq-dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 4px 0;
+  width: 100%;
+}
+
+
+
+
+.page_title {
+    font-family: "Open Sans",serif;
+ 
+  font-weight: 700;
+   
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    color: #ece5e5;
+    text-shadow: 2px 2px 4px rgba(110, 104, 104, 0.5); /* צל לכתיבה */
+    margin: 80px 8% 1rem auto;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+ .change-title {
+
+     margin-left: 1100px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    color: rgb(230, 218, 218);
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    min-height: 60px;
+    transition: opacity 1.5s ease, transform 1.5s ease; /* אנימציה חלקה של 1.5 שניות */
+    transform:translateY(10px);
+    
+}
+
+
+
+.change-title-active {
+    opacity: 1;
+    transform: translateY(0); /* חוזרת למקום */
+    
+}
+
+
+
+.opening_paragraph {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 500;
+    text-align:right; /* נוודא שהטקסט מיושר לימין */
+    font-size: 1.1rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-left: auto; /* דחוף את הטקסט לימין */
+    margin-right: 110px; /* רווח בצד ימין */
+    margin-top: -10px;
+    direction: rtl;
+    color: rgb(240, 236, 236);
+  
+}
+
+
+/* VolunteerMapSection.css */
+.volunteer-map-section {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 4rem 0;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 250px;
+  margin-bottom: 100px;
+  background-color: #fbfbfb;
+
+}
+
+.map-wrapper {
+  position: relative;
+  width: 70% !important;
+  height: 70vh;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 10px;
+  order: 2;
+}
+
+.volunteer-map-container {
+  
+  flex: 1;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+ 
+  
+}
+
+      .map-text p {
+        margin-bottom: 0.75rem;
+      }
+
+      
+.map-headline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #949d98;
+  margin-left: 70px;
+  text-shadow: 2px 2px 2px rgba(100, 103, 100, 0.2);
+  margin-bottom: 1.75rem; /* הקטנת המרווח מתחת לכותרת */
+}
+
+
+/* Explanation text */
+.map-explanation {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+ 
+}
+
+
+
+
+
+
+
+/* Grid Layout - Reversed order */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  direction: rtl;
+}
+
+
+
+
+
+.map-text {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 50px;
+  margin-top: -20px;
+  line-height: 1.6;
+  color: #666;
+  max-width: 450px;
+  text-align: center;
+  
+}
+
+/* Content Section */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+
+/* Feature Cards - Vertical Layout */
+.feature-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* הקטנת המרווח בין הכרטיסיות */
+  max-width: 400px;
+  margin-right: 130px;
+
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between; 
+  height: 60px;
+  background-color: white;
+  padding: 1rem 1.5rem; 
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.first-card{
+   margin-top: -40px !important;
+}
+
+.card-content {
+  text-align: center; /* Changed from right to center */
+  margin-left: 30px;
+  flex-grow: 1; /* Added to ensure content takes available space */
+}
+
+.card-content h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #83938a;
+  text-shadow: 2px 2px 2px rgba(100, 103, 100, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  line-height: 0.2;
+  color: #7f7e7e;
+  margin-bottom: 20px;
+}
+
+.card-icon {
+  background-color: #f0f9f6;
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: #059669;
+}
+
+
+
+
+
+  .areas-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    padding-bottom: 10%;
+    
+  }
+  
+  .areas-headline {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.8rem;
+    color: #949d98;
+    font-style: normal;
+    font-weight: 700; /* Corrected font-weight syntax */
+    text-shadow: 2px 2px 2px rgba(100, 103, 100, 0.2);
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    padding-top: 1%;
+    position: relative; /* Add positioning for the underline */
+}
+
+
+  
+  .area-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap :3.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .home-page .area-buttons button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    padding: 1rem 2rem;
+    background-color: #ebebeb;
+    color: rgb(81, 99, 93);
+    border: none !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל רך */ 
+    outline: none !important;
+  }
+  
+  .home-page .area-buttons button:hover {
+    background-color: rgb(236, 238, 236);
+  }
+
+  .volunteering-in {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(88, 126, 88);
+    font-weight: bold;
+    margin-bottom: 50px;
+    position: relative;
+    display: block; /* משנה ל- block כדי שתתפוס את כל הרוחב */
+    text-align: center; /* מרכז את הטקסט */
+    padding-bottom: 10px; /* מוסיף ריווח מתחת לטקסט */
+  }
+  
+  .volunteering-in::after {
+    content: '';
+    display: block;
+    height: 0.5px;
+    position: absolute;
+    bottom: 0; /* ממקם את הקו בתחתית האלמנט */
+    left: 25%; /* מתחיל את הקו ברבע השמאלי של הכותרת */
+    width: 50%; /* קובע שהקו יכסה חצי מהכותרת */
+    background-color: #859b92;
+  }
+  
+  .selected-area-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center; /* ממרכז את התוכן אופקית */
+    flex-direction: column; /* מוודא שהתוכן ממויין עמוד אחר עמוד */
+    align-items: center; /* ממרכז גם אנכית אם יש צורך */
+  }
+  
+  .location-card {
+    height: 100%;
+    min-height: 450px; /* גובה מינימלי אחיד לכל הכרטיסים */
+    max-width: 400px;  /* מגבלת רוחב מקסימלית לכרטיס */
+    min-width: 300px;  /* רוחב מינימלי כדי למנוע הצטמקות הכרטיס */
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.1s ease-in-out;
+    text-align: center;
+  }
+  
+  .location-card:hover {
+    box-shadow: 0 4px 8px rgba(70, 67, 67, 0.1);
+  }
+  .volunteering-image{
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.85 !important;
+
+  }
+ 
+  
+  .location-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .location-description {
+    font-family: 'Roboto', serif;
+    font-size: 15px !important;
+    color: rgb(100, 108, 100);
+    font-style:normal;
+    flex-grow: 1;
+    padding-left: 10px;
+    margin-top: 5px;
+    text-align: center; /* ממרכז את הטקסט */
+    max-width: 100%;
+    padding: 10px;
+  }
+
+
+ 
+  
+  .home-page .footer-copyright {
+      background-color:  #c3c5c4;
+      opacity: 0.8;
+      height: 20px;
+      padding-top: 5px;
+      padding-bottom: 30px;
+      color: rgb(68, 84, 79);
+      text-align: center;
+      font-family: 'Open-Sans', sans-serif;
+      font-style: italic;
+  
+  }
+
+  .home-page .footer-copyright p{
+    margin-top: 10px !important;
+  }
+
+
+  .home-page .web-link{
+    color: rgb(89, 84, 84);
+    text-decoration: underline;
+  }
+  .web-link:hover{
+    color: #786231;
+    text-decoration: none;
+  }
+
+ 
+  
+  .footer-copyright .hostages-icon {
+    width: 30px; /* ניתן לשנות את הגודל לפי הצורך */
+    height: 20px;
+    margin-right: 5px !important; /* רווח בין האייקון לטקסט */
+  }
+  
+
+
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 200px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+ 
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+  height: 520px; /* כל התמונות באותו גובה */
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%; /* התמונה מתאימה לגובה ולרוחב של ה-container */
+  object-fit:cover; /* מבטיח שהתמונה תתאים לגבולות מבלי לעוות אותה */
+  border-radius: 2px;
+  transition: transform 0.3s ease; /* אנימציה */
+  filter: brightness(75%); /* כהות קלה */
+   /* צבע רקע במידה ונשארים רווחים */
+}
+
+.image-item img:hover {
+  transform: scale(1.05); /* הגדלה כשהעכבר עובר מעל */
+  filter: brightness(85%); /* החזרת בהירות למצב מלא */
+}
+
+/* השורה הראשונה */
+.row:first-child .wide {
+  flex: 1.8; /* התמונה הרחבה יותר */
+}
+
+.row:first-child .small-wide {
+  flex: 1; /* התמונה הצרה יותר */
+}
+
+/* השורה השנייה */
+.row:nth-child(2) .equal-wide {
+  flex: 1.2; /* תמונות מימין ומשמאל */
+}
+
+.row:nth-child(2) .narrow {
+  flex: 1; /* תמונה אמצעית צרה */
+}
+
+.image-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* צל מוגדל בהובר */
+}
+
+.image-sec-headline{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-size: 3.5rem;
+color: #949d98;
+align-items: center;
+text-shadow: 2px 2px 2px rgba(100, 103, 100, 0.2);
+}
+
+.home-page .footer{
+  margin-top: -120px;;
+}
+
+
+
+
+
+/* מסכים גדולים (מעל 2500px) */
+@media screen and (min-width: 2560px) {
+
+
+
+  body, html {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* הוסיפי wrapper ראשי */
+.home-page {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding-right:0 !important;
+}
+
+.home-page .site-header {
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 60px;
+  
+}
+
+.home-page .site-logo {
+  width: 125px;
+  height: 145px !important;
+  margin-bottom: -4px !important;
+  
+}
+
+.home-page .nav-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+  margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+  position: absolute;
+  left: 49%;
+  transform: translateX(-50%);
+  height: 5%;
+}
+
+.home-page .nav-site a, .home-page .faq-title {
+  font-size: 1.3rem;
+  padding: 12px 15px;
+  margin-left: 30px !important;
+  white-space: nowrap;
+  position: relative;
+ 
+}
+
+.home-page .faq-dropdown-menu {
+  right: -10px ;
+
+}
+.home-page .faq-dropdown-menu a {
+  font-size: 1rem !important;
+  margin-right: -10px;
+}
+
+
+  .page_title {
+    font-size: 5rem;
+    margin: 100px 10% 1rem auto;
+  }
+
+  .home-page .change-title{
+    position:relative;
+    right: calc(50% - 1000px); /* או ערך אחר שמתאים למיקום הרצוי */
+    margin-right: 0;
+    font-size: 2.5rem;
+    margin-top:30px;
+    
+   
+  }
+
+  .home-page .opening_paragraph {
+    max-width: 800px;
+    font-size: 1.4rem;
+    margin-right: 210px;
+    margin-top: 20px;
+ 
+  }
+
+  .volunteer-map-section{
+    height:50rem !important;
+  }
+
+
+  
+  .volunteer-map-container {
+    
+    flex: 1;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+   
+    
+  }
+  
+
+  .home-page .map-wrapper{
+  
+    margin-right: 50px;
+    margin-top: 60px;
+    width: 70% !important;
+  }
+
+  .home-page .feature-cards{
+    margin-right: 80px;
+    
+  }
+
+  .home-page .first-card{
+    margin-top: -650px !important;
+  }
+
+ 
+
+
+  .home-page .map-headline{
+    font-size: 3rem !important;
+    
+  }
+   .home-page .map-text{
+    text-align: center;
+    font-size: 1.08rem;
+    max-width: 450px;
+    margin-top: -10px;
+    
+    
+   }
+ 
+
+
+  .feature-cards {
+    max-width: 500px;
+    
+  }
+
+  .first-card{
+    margin-top: -600px !important;
+  }
+
+ 
+
+  .areas-headline{
+    font-size:3.4rem ;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .area-buttons{
+    padding: 20px;
+  }
+
+  .home-page .area-buttons button{
+    font-size: 1.3rem;
+    padding: 1.1rem 2.5rem !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל רך */
+  }
+
+
+  .volunteering-in{
+    font-size: 2rem;
+  
+  }
+
+  .selected-area-container{
+    max-width: 1800px;
+   
+
+  }
+
+  .location-card{
+    margin-right: 20px;
+ 
+  }
+
+ 
+
+  .image-item {
+  
+    height: 670px;
+  }
+}
+
+
+@media screen and (min-width: 1921px) and (max-width: 2559px){
+ 
+    
+  body, html {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* הוסיפי wrapper ראשי */
+.home-page {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding-right: 0 !important;
+}
+
+
+.home-page .site-header {
+  padding: 20px 40px !important;
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+  
+}
+
+.home-page .site-logo {
+  width: 125px;
+  height: 145px !important;
+  margin-bottom: -2px;
+  
+}
+
+.home-page .nav-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+  margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5%;
+}
+
+.home-page .nav-site a, .home-page .faq-title {
+  font-size: 1.1rem;
+  padding: 12px 15px;
+  margin-left: 70px;
+  white-space: nowrap;
+  position: relative;
+ 
+}
+
+
+.home-page .faq-dropdown-menu {
+
+  right: -50px;
+
+}
+.home-page .faq-dropdown-menu a {
+  font-size: 1.05rem !important;
+  margin-right: 50px;
+  
+}
+
+
+  .page_title {
+    font-size: 5rem;
+    margin: 100px 10% 2rem auto;
+  }
+
+ 
+  .home-page .opening_paragraph {
+    max-width: 650px;
+    font-size: 1.4rem;
+    margin-right: 200px;
+    margin-top: 20px;
+  }
+
+  .home-page .map-wrapper{
+    margin-top: 50px;
+    margin-right: 40px;
+    height:auto !important;
+  }
+
+
+  .home-page .map-headline{
+    font-size: 3rem !important;
+    margin-top: 10px;
+  }
+   .home-page .map-text{
+    font-size: 1.2rem;
+    max-width: 500px;
+   }
+  
+
+  .first-card{
+    margin-top: -50px !important;
+  }
+
+  .feature-cards {
+    max-width: 450px;
+    margin-right: 120px;
+    
+  }
+
+  .areas-headline{
+    font-size:3.4rem ;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .area-buttons{
+    padding: 20px;
+  
+  }
+
+  .home-page .area-buttons button{
+    font-size: 1.4rem;
+    padding: 1rem 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל רך */
+    
+  }
+
+
+  .volunteering-in{
+    font-size: 2rem;
+    
+  }
+
+  .selected-area-container{
+    max-width: 1800px;
+    
+  }
+
+
+  .image-item {
+  
+    height: 550px;
+  }
+
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2100px){
+
+  .change-title{
+    position:relative;
+    right: 1%; 
+    margin-right: 0;
+    font-size: 2.5rem;
+  
+  }
+
+  .map-wrapper{
+    margin-right: 60px !important;
+  }
+
+}
+
+@media screen and (min-width: 2101px) and (max-width: 2299px){
+
+  .image-item{
+    height: 600px;
+  }
+
+  .change-title{
+    position:relative;
+    right: -4%; 
+    margin-right: 0;
+    font-size: 2.5rem;
+  
+  }
+
+}
+
+@media screen and (min-width: 2300px) and (max-width: 2450px){
+
+ .map-wrapper{
+  margin-right: 70px !important;
+ }
+  
+  .change-title{
+    position:relative;
+    right: -9%; 
+    margin-right: 0;
+    font-size: 2.5rem;
+  }
+
+  .image-item{
+    height: 650px;
+  }
+
+}
+
+@media screen and (min-width: 2451px) and (max-width: 2559px){
+  .page_title{
+    margin-right: 13rem;
+  }
+
+  .change-title{
+    position:relative;
+    right: -14%; 
+    margin-right: 0;
+    font-size: 2.5rem;
+  
+  }
+
+  .home-page .map-wrapper{
+    margin-right: 50px;
+  }
+
+  .image-item{
+    height: 700px;
+  }
+
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 1900px){
+      
+  body, html {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* הוסיפי wrapper ראשי */
+.home-page {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding-right: 0 !important;
+}
+
+
+.home-page .site-header {
+  padding: 20px 40px !important;
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+  
+}
+
+.home-page .site-logo {
+  width: 125px;
+  height: 145px !important;
+  margin-bottom: -2px;
+  
+}
+
+.home-page .nav-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+  margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+  position: absolute;
+  left: 48%;
+  transform: translateX(-50%);
+  height: 5%;
+}
+
+.home-page .nav-site a, .home-page .faq-title {
+  font-size: 1.1rem;
+  padding: 12px 15px;
+  margin-left: 40px;
+  white-space: nowrap;
+  position: relative;
+ 
+}
+
+
+.home-page .faq-dropdown-menu {
+  
+  right: -10px;
+
+}
+.home-page .faq-dropdown-menu a {
+  font-size: 1.05rem !important;
+}
+
+
+  .page_title {
+    font-size: 4rem;
+    margin: 100px 10% 2rem auto;
+  }
+
+ 
+  .home-page .opening_paragraph {
+    max-width: 600px;
+    font-size: 1.2rem;
+    margin-right: 120px;
+    margin-top: 0px;
+    
+  }
+
+  .home-page .map-wrapper{
+    margin-right: 20px;
+  }
+
+
+  .home-page .map-headline{
+    font-size: 2.5rem !important;
+    margin-top: -10px;
+  }
+   .home-page .map-text{
+    font-size: 1.02rem;
+    max-width: 450px;
+    margin-top: -10px;
+    
+   }
+ 
+
+  
+
+  .card-content h3 {
+ 
+    font-size: 1.02rem;
+
+   
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+  
+  }
+
+  .areas-headline{
+    font-size:3rem ;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .area-buttons{
+    padding: 20px;
+  }
+
+  .home-page .area-buttons button{
+    font-size: 1.2rem;
+   padding: 1rem 2.5rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל רך */
+  }
+
+
+  .volunteering-in{
+    font-size: 1.7rem;
+ 
+  }
+
+  .selected-area-container{
+    max-width: 1300px;
+   
+   
+  }
+
+  .location-card{
+    height: 520px;
+  }
+
+  
+
+
+
+  .image-item {
+  
+    height: 420px;
+    
+  }
+
+
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 1500px){
+
+  .feature-cards{
+    margin-right: 110px;
+  }
+
+  .change-title{
+    position:relative;
+    max-width: 500px;
+    right: 12%; 
+    margin-right: 0;
+    font-size: 2rem;
+    white-space: nowrap;
+  
+  }
+
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1539px){
+
+  .home-page .map-wrapper{
+    margin-right: 30px;
+  }
+
+  .home-page .feature-cards{
+    margin-right: 120px;
+  }
+
+
+  .change-title{
+    position:relative;
+    max-width: 500px;
+    right: 10%; 
+    margin-right: 0;
+    font-size: 2rem;
+    white-space: nowrap;
+  
+  }
+
+}
+
+@media screen and (min-width: 1540px) and (max-width: 1600px){
+
+  .change-title{
+    position:relative;
+    max-width: 500px;
+    right: 10%; 
+    margin-right: 0;
+    font-size: 2rem;
+    white-space: nowrap;
+  
+  }
+  
+  .home-page .map-wrapper{
+    margin-right: 30px;
+  }
+
+  .home-page .feature-cards{
+    margin-right: 140px;
+  }
+
+  .image-item{
+    height: 450px;
+  }
+
+
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1680px){
+
+  .home-page .map-wrapper{
+    margin-right: 50px;
+  }
+
+  .home-page .feature-cards{
+    margin-right: 150px;
+  }
+
+  
+  .change-title{
+    position:relative;
+    max-width: 500px;
+    right: 7.5%; 
+    margin-right: 0;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+  .image-item{
+    height: 470px;
+  }
+
+
+}
+
+@media screen and (min-width: 1681px) and (max-width: 1750px){
+  
+  .page_title{
+    margin-right: 9rem;
+  }
+  .change-title{
+    position:relative;
+    max-width: 500px;
+    right: 3%; 
+    margin-right: 0;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  .home-page .map-wrapper{
+    margin-right: 50px;
+  }
+
+  .home-page .feature-cards{
+    margin-right: 150px;
+  }
+
+  .image-item{
+    height: 470px;
+  }
+
+
+
+}
+
+@media screen and (min-width: 1751px) and (max-width: 1820px){
+  .home-page .page_title{
+    margin-right: 9rem;
+  }
+
+  .change-title{
+    position:relative;
+    max-width: 500px;
+    right: 1%; 
+    margin-right: 0;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  .home-page .map-wrapper{
+    margin-right: 50px;
+  }
+
+  .home-page .feature-cards{
+    margin-right: 150px;
+  }
+
+  .image-item{
+    height: 470px;
+  }
+
+
+}
+
+@media screen and (min-width: 1821px) and (max-width: 1900px){
+
+  .home-page .map-wrapper{
+    margin-right: 50px;
+  }
+
+  .home-page .feature-cards{
+    margin-right: 150px;
+  }
+
+  .home-page .page_title{
+    margin-right: 9rem;
+  }
+
+
+  .change-title{
+    position:relative;
+    max-width: 500px;
+    right: -2%; 
+    margin-right: 0;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+
+  .home-page .image-item{
+    height: 500px;
+  }
+
+
+
+}
+
+
+@media screen and (min-width: 1366px) and (max-width: 1439px){
+
+  body, html {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* הוסיפי wrapper ראשי */
+.home-page {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding-right: 0 !important;
+}
+
+.home-page .site-header {
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+  
+}
+
+.home-page .site-logo {
+  width: 120px;
+  height: 135px !important;
+  margin-bottom: -4px;
+  
+}
+
+.home-page .nav-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+  margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5%;
+}
+
+.home-page .nav-site a, .home-page .faq-title {
+  font-size: 1.1rem !important;
+  padding: 12px 15px;
+  margin-left: 40px;
+  white-space: nowrap;
+  position: relative;
+ 
+}
+
+.home-page .faq-dropdown-menu {
+  
+  right: -10px;
+
+}
+
+.home-page .faq-dropdown-menu a{
+  font-size: 1rem !important;
+}
+
+.change-title{
+  position:relative;
+  max-width: 500px;
+  right: 12%; 
+  margin-right: 0;
+  font-size: 1.8rem;
+  white-space: nowrap;
+} 
+
+.opening_paragraph{
+  max-width: 600px;
+}
+
+
+
+.map-headline{
+  margin-top: 20px;
+}
+
+.map-wrapper{
+  margin-right: 20px;
+}
+
+.feature-cards{
+  margin-right: 100px;
+}
+
+ .home-page .area-buttons button{
+    font-size: 1.1rem;
+   padding: 1rem 2.5rem;
+  }
+
+.selected-area-container{
+  max-width: 1300px;
+ 
+ 
+}
+
+
+
+
+.location-card{
+ 
+  text-align: center; /* ממרכז את הטקסט */
+
+  
+}
+
+.location-description{
+  text-align: center; /* ממרכז את הטקסט */
+  max-width: 100%;
+  padding: 10px;
+}
+
+.image-item {
+
+  height: 400px;
+  
+}
+
+}
+
+
+@media screen and (min-width: 1124px) and (max-width: 1365px){
+
+  
+  body, html {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* הוסיפי wrapper ראשי */
+.home-page {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding-right: 0 !important;
+}
+
+.home-page .site-header {
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+      height: 110px;
+  
+}
+
+.home-page .site-logo {
+  width: 125px;
+  height: 135px !important;
+  margin-bottom: -4px;
+  margin-right: -10px;
+  
+}
+
+.home-page .nav-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+  margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  gap: 60px !important;
+}
+
+.home-page .nav-site a, .home-page .faq-title {
+  font-size: 1rem !important;
+  padding: 12px 15px;
+  margin-left: -30px;
+  white-space: nowrap;
+  position: relative;
+ 
+}
+
+.home-page .faq-dropdown-menu {
+  
+  right: -20px;
+
+}
+
+.home-page .faq-dropdown-menu a {
+  
+  margin-right: -30px;
+  font-size: 1rem !important;
+}
+
+.page_title{
+  font-size: 3.5rem;
+  margin-right: 70px;
+}
+
+.opening_paragraph{
+  font-size: 1rem;
+  max-width: 500px;
+  margin-right: 70px;
+}
+
+
+
+.home-page .map-headline{
+  font-size: 2rem !important;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+ .home-page .map-text{
+  font-size: 0.9rem;
+  margin-right: 40px;
+  max-width: 450px;
+ 
+ }
+
+ .map-wrapper {
+  height: 70vh !important;
+  width: 75% !important;
+  margin-top: 10px;
+
+}
+
+
+
+.card-content h3 {
+
+  font-size: 1rem;
+
+ 
+}
+
+.card-content p {
+  font-size: 0.85rem;
+
+}
+
+.area-buttons{
+gap: 20px;
+}
+ .home-page .area-buttons button{
+    font-size: 1rem;
+   padding: 1rem 2.5rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל רך */
+   
+  }
+
+
+
+.selected-area-container{
+  max-width: 850px;
+
+}
+
+
+
+.image-item {
+
+  height: 400px;
+  
+}
+
+
+}
+
+@media screen and (min-width: 1124px) and (max-width: 1149px){
+
+  
+.home-page .feature-cards {
+  max-width: 350px;
+  margin-right: 70px !important;
+  
+  
+}
+
+  .page_title{
+    margin-right: 5rem;
+  }
+
+  .change-title{
+    position:relative;
+    max-width: 500px;
+    right: 15%; 
+    margin-right: 2.5rem;
+    font-size: 1.6rem;
+    white-space: nowrap;
+  } 
+  
+
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1200px){
+  .home-page .feature-cards {
+    max-width: 350px;
+    margin-right: 90px !important;
+  }
+
+
+}
+
+
+@media screen and (min-width: 1201px) and (max-width: 1280px){
+  .home-page .feature-cards {
+    max-width: 350px;
+    margin-right:100px !important;
+  }
+
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1365px){
+
+  .change-title{
+    position:relative;
+    max-width: 500px;
+    right: 11.5%; 
+    margin-right: 0;
+    font-size: 1.6rem;
+    white-space: nowrap;
+  } 
+  .home-page .feature-cards {
+    max-width: 400px;
+    margin-right: 90px !important;
+  }
+  
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1123px){
+
+  
+  body, html {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* הוסיפי wrapper ראשי */
+.home-page {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding-right: 0 !important;
+}
+
+.home-page .site-header {
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+      height: 100px;
+  
+}
+
+.home-page .site-logo {
+  width: 115px !important;
+  height: 125px !important;
+  margin-top: -10px;
+  margin-right: -20px;
+  
+}
+
+.home-page .nav-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+  margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  gap: 50px !important;
+}
+
+.home-page .nav-site a, .home-page .faq-title {
+  font-size: 0.9rem !important;
+  padding: 12px 15px;
+  margin-left: -30px;
+  white-space: nowrap;
+  position: relative;
+ 
+}
+
+.home-page .faq-dropdown-menu {
+  
+  right: -20px;
+
+}
+
+.home-page .faq-dropdown-menu a {
+  
+  margin-right: -30px;
+  font-size: 1rem !important;
+}
+  
+/* כותרת ראשית */
+.page_title {
+  font-size: clamp(3rem, 4vw, 3rem);
+  margin: 60px 5% 1rem;
+  text-align: center;
+}
+
+/* כותרת משנית */
+.change-title {
+  margin: 20px auto;
+  font-size: 1.6rem;
+  text-align: center;
+  position: relative;
+  right: auto;
+  left: auto;
+  opacity: 0;
+  transition: opacity 1.5s ease, transform 1.5s ease; /* אנימציה חלקה של 1.5 שניות */
+  transform:translateY(10px);
+  
+}
+/* כותרת פעילה */
+.change-title-active {
+  opacity: 1;
+  transform: translateY(0); /* חזרה למקום */
+}
+
+/* פסקת פתיחה */
+.opening_paragraph {
+  margin: 10px;
+  margin-top: -20px;
+  font-size: 1rem;
+  max-width: 50%;
+  text-align :center;
+}
+
+
+
+/* התאמת גודל הפופאפ למובייל */
+.leaflet-popup-content {
+  margin: 10px !important;
+  width: auto !important;
+  min-width: 200px !important;
+}
+
+/* התאמת גודל האייקונים במפה */
+.leaflet-marker-icon {
+  width: 24px !important;
+  height: 24px !important;
+  margin-left: -12px !important;
+  margin-top: -24px !important;
+}
+
+.content-grid {
+  grid-template-columns: 1fr;
+  gap: 10rem;
+}
+
+
+
+.content-wrapper {
+  order: 2;
+  gap: 2rem;
+}
+
+.map-wrapper{
+  width: 100% !important;
+}
+
+
+
+.map-headline {
+  font-size: 1.8rem;
+  margin: 0;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.map-text {
+  margin: 0 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* כרטיסי תכונות */
+.feature-cards {
+  margin: 20px auto;
+  width: 70%;
+  gap: 15px;
+}
+
+.first-card {
+  margin-top: -50px !important;
+}
+
+.feature-card {
+  height: auto;
+  padding: 0.5rem;
+  
+}
+
+.card-content h3 {
+  font-size: 1rem;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+}
+
+/* אזור ההתנדבויות */
+.areas-section {
+  margin-top: -50px;
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+
+.areas-headline {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.area-buttons {
+  gap: 1.3rem;
+  justify-content: center;
+  max-width: 300px;
+  
+}
+
+.home-page .area-buttons button {
+  margin: 0.9rem;
+  font-size: 1rem;
+  padding: 0.7rem 1.7rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל רך */
+}
+
+ 
+
+  .volunteering-in{
+    font-size: 1.4rem;
+  }
+
+
+  .selected-area-container {
+    max-width: 500px;
+    text-align: center !important;
+   
+  }
+
+  .location-card {
+    margin-right: 40px;
+    width: 90%;
+    min-height: 400px !important;
+  }
+
+  
+
+  .volunteering-image {
+    height: 40% !important;
+    
+  }
+
+
+  .location-description {
+  
+    padding-bottom: 0.01rem !important;
+    font-size: 0.86rem !important;
+   
+    line-height: 1.4 !important;
+    
+  }
+ 
+  
+  .details-registration{
+   font-size: 0.9rem !important;
+   margin-top: 5px !important;
+   padding: 8px 15px 8px 15px !important;
+  }
+ 
+  .cancel-registration-inline{
+   font-size: 0.9rem !important;
+   margin-top: 0px !important;
+   margin-bottom: 5px !important;
+   
+  }
+ 
+  .locationName{
+   font-size: 1rem !important;
+   
+ }
+ 
+ .type{
+ font-size: 1rem !important;
+ }
+ 
+ 
+
+/* עיצוב חדש לגלריית תמונות - 2x2 גריד עם זוויות */
+.image-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 115px;
+  margin-top: -60px;
+  padding-bottom: 2%;
+}
+
+.row {
+  display: contents;
+}
+
+.image-item {
+  height: 90%px !important;
+  width: 100%;
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* צל רך */
+}
+
+.image-item:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+
+
+
+.image-item:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); 
+  transform: rotate(0) scale(1.05);
+  z-index: 1;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: brightness(85%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* צל רך */
+  transition: box-shadow 0.3s ease-in-out; /* אנימציה חלקה */
+}
+
+/* הסתרת התמונה החמישית במובייל */
+.row:nth-child(2) .equal-wide:last-child {
+  display: none;
+}
+
+/* שינוי גדלים ספציפיים לתמונות */
+.row:first-child .wide {
+  grid-column: 1;
+  grid-row: 1;
+  height: 220px;
+}
+
+.row:first-child .small-wide {
+  grid-column: 2;
+  grid-row: 1;
+  height: 220px;
+}
+
+.row:nth-child(2) .equal-wide:first-child {
+  grid-column: 1;
+  grid-row: 2;
+  height: 220px;
+}
+
+.row:nth-child(2) .narrow {
+  grid-column: 2;
+  grid-row: 2;
+  height: 220px;
+}
+
+}
+
+
+
+
+
+/* Media Queries עבור מסכים קטנים */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* כותרת ראשית */
+  .page_title {
+    font-size: clamp(2.4rem, 4vw, 3rem);
+    margin: 30px 5% 0.3rem;
+    text-align: center;
+  }
+
+  /* כותרת משנית */
+  .change-title {
+    margin: 0 auto;
+    font-size: 1.4rem;
+    
+    text-align: center;
+  
+    
+}
+
+  /* פסקת פתיחה */
+  .opening_paragraph {
+    margin: -10px;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: -30px;
+  }
+
+  .opening_paragraph p{
+    line-height: 1.4rem;
+  }
+
+  
+
+
+/* התאמת גודל הפופאפ למובייל */
+.leaflet-popup-content {
+  margin: 10px !important;
+  width: auto !important;
+  min-width: 200px !important;
+}
+
+/* התאמת גודל האייקונים במפה */
+.leaflet-marker-icon {
+  width: 24px !important;
+  height: 24px !important;
+  margin-left: -12px !important;
+  margin-top: -24px !important;
+}
+
+.volunteer-map-section{
+  margin-top: 10rem;
+}
+
+.content-grid {
+  grid-template-columns: 1fr;
+  gap: 10rem;
+}
+
+.map-wrapper{
+  width: 100% !important;
+}
+
+
+
+.content-wrapper {
+  order: 2;
+  gap: 2rem;
+}
+
+.map-headline {
+  font-size: 1.8rem;
+  margin: 0;
+  margin-top: -7rem;
+  text-align: center;
+}
+
+.map-text {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1.4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  max-width: 70%;
+}
+
+/* כרטיסי תכונות */
+.feature-cards {
+  margin: 20px auto;
+  width: 80%;
+  gap: 15px;
+}
+
+.first-card {
+  margin-top: -5rem !important;
+}
+
+.feature-card {
+  height: auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  
+}
+
+
+
+  .card-content h3 {
+    font-size: 1rem;
+    margin-bottom: -10px !important;
+  }
+
+  .card-content p {
+    
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  /* אזור ההתנדבויות */
+  .areas-section {
+    margin-top: -50px;
+    padding: 0 15px;
+    margin-bottom: 50px;
+  }
+
+  .areas-headline {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .area-buttons {
+    gap: 0.8rem;
+    justify-content: center;
+    max-width: 200px !important;
+  }
+
+ .home-page .area-buttons button {
+ 
+  margin: 0.3rem;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.5rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל רך */
+}
+
+  /* כרטיסי מיקומי התנדבות */
+  .selected-area-container {
+    max-width: 400px;
+   
+  }
+
+  .location-card {
+    width: 90%;
+    min-height: 300px;
+  }
+
+  .volunteering-in{
+    font-size: 1.3rem;
+  }
+
+  .volunteering-image {
+    height: 40% !important;
+    
+  }
+  .location-description {
+  
+    padding-bottom: 0.01rem !important;
+    font-size: 0.86rem !important;
+   
+    line-height: 1.4 !important;
+    
+  }
+ 
+  
+  .details-registration{
+   font-size: 0.9rem !important;
+   margin-top: 5px !important;
+   padding: 8px 15px 8px 15px !important;
+  }
+ 
+  .cancel-registration-inline{
+   font-size: 0.9rem !important;
+   margin-top: 0px !important;
+   margin-bottom: 5px !important;
+   
+  }
+ 
+  .locationName{
+   font-size: 1rem !important;
+ }
+ 
+ .type{
+ font-size: 1rem !important;
+ }
+ 
+ 
+
+
+  /* עיצוב חדש לגלריית תמונות - 2x2 גריד עם זוויות */
+  .image-section {
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 45px 60px;
+    
+  }
+
+  .row {
+    display: contents;
+  }
+
+  .image-item {
+    height: 100% !important;
+    width: 100%;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* צל רך */
+  }
+
+  .image-item:nth-child(even) {
+    transform: rotate(2deg);
+  }
+
+
+  
+
+  .image-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); 
+    transform: rotate(0) scale(1.05);
+    z-index: 1;
+  }
+
+  .image-item img {
+ 
+    border-radius: 8px;
+    filter: brightness(85%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* צל רך */
+    transition: box-shadow 0.3s ease-in-out; /* אנימציה חלקה */
+  }
+
+  /* הסתרת התמונה החמישית במובייל */
+  .row:nth-child(2) .equal-wide:last-child {
+    display: none;
+  }
+
+  /* שינוי גדלים ספציפיים לתמונות */
+  .row:first-child .wide {
+    grid-column: 1;
+    grid-row: 1;
+    height: 220px;
+  }
+
+  .row:first-child .small-wide {
+    grid-column: 2;
+    grid-row: 1;
+    height: 220px;
+  }
+
+  .row:nth-child(2) .equal-wide:first-child {
+    grid-column: 1;
+    grid-row: 2;
+    height: 220px;
+  }
+
+  .row:nth-child(2) .narrow {
+    grid-column: 2;
+    grid-row: 2;
+    height: 220px;
+  }
+
+  .home-page .footer-copyright{
+    font-size: 0.9rem !important;
+    
+    
+    }
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px){
+  .opening_paragraph{
+    max-width: 60%;
+  }
+
+  .map-text{
+    max-width: 75%;
+  }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px){
+  .opening_paragraph{
+    max-width: 60%;
+  }
+
+  .map-text{
+    max-width: 65%;
+  }
+
+}
+
+
+@media screen and (min-width: 414px) and (max-width: 480px){
+
+    /* כותרת ראשית */
+    .page_title {
+      font-size: clamp(2.3rem, 4vw, 3rem);
+      margin: 60px 5% 1rem;
+      text-align: center;
+    }
+  
+    /* כותרת משנית */
+    .change-title {
+      margin: 10px auto;
+      font-size: 1.25rem;
+      
+      text-align: center;
+    
+      
+  }
+  
+    /* פסקת פתיחה */
+    .opening_paragraph {
+      margin: -10px;
+      font-size: 0.8rem;
+      max-width: 65%;
+      text-align: center;
+      margin-top: -40px;
+    }
+  
+    .opening_paragraph p{
+      line-height: 1.4rem;
+    }
+  
+    
+  .map-wrapper {
+  
+  width: 100% !important;
+  
+  }
+  
+  .volunteer-map-section {
+    margin: 8rem -5.5rem;
+    padding: 0.5rem;
+    padding-top: 3rem;
+    
+  }
+  
+  /* התאמת גודל הפופאפ למובייל */
+  .leaflet-popup-content {
+    margin: 10px !important;
+    width: auto !important;
+    min-width: 200px !important;
+  }
+  
+  /* התאמת גודל האייקונים במפה */
+  .leaflet-marker-icon {
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: -12px !important;
+    margin-top: -24px !important;
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 10rem;
+  }
+  
+  
+  
+  .content-wrapper {
+    order: 2;
+    gap: 2rem;
+  }
+  
+  .map-headline {
+    font-size: 1.6rem;
+    margin: 0;
+    margin-top: -8rem;
+    text-align: center;
+  }
+  
+  .map-text {
+    margin: 0 15px;
+    text-align: center;
+    font-size: 0.82rem;
+    max-width: 55%;
+  }
+  
+  /* כרטיסי תכונות */
+  .feature-cards {
+    margin: 20px auto;
+    width: 55%;
+    gap: 15px;
+  }
+  
+  .first-card {
+    margin-top: -60px !important;
+  }
+  
+  .feature-card {
+    height: auto;
+   
+    padding: 0.2rem;
+   
+    text-align: center;
+    
+  }
+  
+  
+  
+    .card-content h3 {
+      font-size: 1rem;
+      
+    }
+  
+    .card-content p {
+      font-size: 0.85rem;
+     
+      line-height: 1rem;
+  
+    }
+  
+    /* אזור ההתנדבויות */
+    .areas-section {
+      margin-top: -50px;
+      padding: 0 15px;
+      margin-bottom: 50px;
+    }
+  
+    .areas-headline {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .area-buttons {
+      gap: 0.7rem;
+      justify-content: center;
+      max-width: 200px;
+    }
+  
+    .home-page .area-buttons button {
+  margin: 0.3rem;
+  font-size: 0.8rem;
+  padding: 0.4rem 1.2rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל רך */
+}
+  
+    /* כרטיסי מיקומי התנדבות */
+    .selected-area-container {
+      max-width: 300px;
+     
+    }
+  
+    .location-card {
+      width: 90%;
+      min-height: 300px;
+    }
+  
+    .volunteering-in{
+      font-size: 1.2rem;
+    }
+  
+    .volunteering-image {
+      height: 40% !important;
+      
+    }
+
+    .location-description {
+  
+      padding-bottom: 0.01rem !important;
+      font-size: 0.83rem !important;
+      line-height: 1.4 !important;
+      
+    }
+   
+    
+    .details-registration{
+     font-size: 0.9rem !important;
+     margin-top: 5px !important;
+     padding: 8px 15px 8px 15px !important;
+    }
+   
+    .cancel-registration-inline{
+     font-size: 0.9rem !important;
+     margin-top: 0px !important;
+     margin-bottom: 5px !important;
+     
+    }
+   
+    .locationName{
+     font-size: 0.9rem !important;
+   }
+   
+   .type{
+   font-size: 0.9rem !important;
+   }
+   
+   
+  
+  
+    /* עיצוב חדש לגלריית תמונות - 2x2 גריד עם זוויות */
+    .image-section {
+     
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 15px;
+      row-gap: 15px !important;
+      padding: 45px 40px 45px 35px;
+      
+      
+    }
+  
+    .row {
+      display: contents;
+    }
+  
+    .image-item {
+      height: 100% !important;
+      width: 100%;
+      transform: rotate(-2deg);
+      transition: transform 0.3s ease;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* צל רך */
+    }
+  
+    .image-item:nth-child(even) {
+      transform: rotate(2deg);
+    }
+  
+  
+    
+  
+    .image-item:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); 
+      transform: rotate(0) scale(1.05);
+      z-index: 1;
+    }
+  
+    .image-item img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      filter: brightness(85%);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* צל רך */
+      transition: box-shadow 0.3s ease-in-out; /* אנימציה חלקה */
+    }
+  
+    /* הסתרת התמונה החמישית במובייל */
+    .row:nth-child(2) .equal-wide:last-child {
+      display: none;
+    }
+  
+    /* שינוי גדלים ספציפיים לתמונות */
+    .row:first-child .wide {
+      grid-column: 1;
+      grid-row: 1;
+      height: 220px;
+    }
+  
+    .row:first-child .small-wide {
+      grid-column: 2;
+      grid-row: 1;
+      height: 220px;
+    }
+  
+    .row:nth-child(2) .equal-wide:first-child {
+      grid-column: 1;
+      grid-row: 2;
+      height: 220px;
+    }
+  
+    .row:nth-child(2) .narrow {
+      grid-column: 2;
+      grid-row: 2;
+      height: 220px;
+    }
+
+    .home-page .footer-copyright{
+      font-size: 0.9rem !important;
+      
+      
+      }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 413px){
+
+   /* כותרת ראשית */
+   .page_title {
+    font-size: clamp(2.1rem, 4vw, 3rem);
+    margin: 40px 5% 1rem;
+    text-align: center;
+  }
+
+  /* כותרת משנית */
+  .change-title {
+    margin: -10px auto;
+    font-size: 1.2rem;
+    
+    text-align: center;
+  
+    
+}
+
+  /* פסקת פתיחה */
+  .opening_paragraph {
+    margin: -10px;
+    font-size: 0.75rem;
+    max-width: 70%;
+    text-align: center;
+    margin-top: -26px;
+  }
+
+  .opening_paragraph p{
+    line-height: 1.2rem;
+  }
+
+  
+.map-wrapper {
+
+ width: 100% !important;
+ margin-bottom: -7rem;
+ 
+
+}
+
+.volunteer-map-section {
+  margin: 6rem -7.5rem;
+  padding: 0.5rem;
+  padding-top: 2rem;
+  height: 100%;
+}
+
+/* התאמת גודל הפופאפ למובייל */
+.leaflet-popup-content {
+  margin: 10px !important;
+  width: auto !important;
+  min-width: 200px !important;
+}
+
+/* התאמת גודל האייקונים במפה */
+.leaflet-marker-icon {
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: -12px !important;
+  margin-top: -24px !important;
+}
+
+.content-grid {
+  grid-template-columns: 1fr;
+  gap: 10rem;
+}
+
+
+
+.content-wrapper {
+  order: 2;
+  gap: 2rem;
+}
+
+.map-headline {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-top: -2.5rem;
+  text-align: center;
+}
+
+.map-text {
+  margin: 0 15px;
+  text-align: center;
+  font-size: 0.8rem;
+  max-width: 47%;
+}
+
+/* כרטיסי תכונות */
+.feature-cards {
+  margin: 20px auto;
+  width: 48%;
+  gap: 15px;
+}
+
+.first-card {
+  margin-top: -80px !important;
+}
+
+.feature-card {
+  height: 70px;
+  padding-right: 0.6rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  
+}
+
+
+
+  .card-content h3 {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    
+  }
+
+  .card-content p {
+    font-size: 0.8rem;
+    padding-right: 0.2rem;
+    line-height: 1.1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+  }
+
+  /* אזור ההתנדבויות */
+  .areas-section {
+    margin-top: -50px;
+    padding: 0 15px;
+    margin-bottom: 50px;
+  }
+
+  .areas-headline {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .area-buttons {
+    gap: 0.6rem;
+    justify-content: center;
+    max-width: 200px;
+    
+  }
+
+ .home-page .area-buttons button {
+  margin: 0.3rem;
+  font-size: 0.8rem;
+  padding: 0.4rem 1.2rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל רך */
+}
+
+  /* כרטיסי מיקומי התנדבות */
+  .selected-area-container {
+    max-width: 300px;
+   
+  }
+
+  .location-card {
+    width: 90%;
+    min-height: 240px;
+    
+  }
+
+  .volunteering-in{
+    font-size: 1.1rem;
+  }
+
+  .volunteering-image {
+    height: 40% !important;
+    
+  }
+
+   .location-description {
+  
+    padding-bottom: 0.01rem !important;
+    font-size: 0.8rem !important;
+    line-height: 1.4 !important;
+    
+  }
+ 
+  
+  .details-registration{
+   font-size: 0.9rem !important;
+   margin-top: 5px !important;
+   padding: 8px 15px 8px 15px !important;
+  }
+ 
+  .cancel-registration-inline{
+   font-size: 0.9rem !important;
+   margin-top: 0px !important;
+   margin-bottom: 5px !important;
+   
+  }
+ 
+  .locationName{
+   font-size: 0.8rem !important;
+ }
+ 
+ .type{
+ font-size: 0.8rem !important;
+ }
+ 
+ 
+
+
+  /* עיצוב חדש לגלריית תמונות - 2x2 גריד עם זוויות */
+  .image-section {
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 15px !important;
+    padding: 40px 30px 30px 30px;
+    
+    
+  }
+
+  .row {
+    display: contents;
+  }
+
+  .image-item {
+    height: 100% !important;
+    width: 100%;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* צל רך */
+  }
+
+  .image-item:nth-child(even) {
+    transform: rotate(2deg);
+  }
+
+
+  
+
+  .image-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); 
+    transform: rotate(0) scale(1.05);
+    z-index: 1;
+  }
+
+  .image-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    filter: brightness(85%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* צל רך */
+    transition: box-shadow 0.3s ease-in-out; /* אנימציה חלקה */
+  }
+
+  /* הסתרת התמונה החמישית במובייל */
+  .row:nth-child(2) .equal-wide:last-child {
+    display: none;
+  }
+
+  /* שינוי גדלים ספציפיים לתמונות */
+  .row:first-child .wide {
+    grid-column: 1;
+    grid-row: 1;
+    height: 220px;
+  }
+
+  .row:first-child .small-wide {
+    grid-column: 2;
+    grid-row: 1;
+    height: 220px;
+  }
+
+  .row:nth-child(2) .equal-wide:first-child {
+    grid-column: 1;
+    grid-row: 2;
+    height: 220px;
+  }
+
+  .row:nth-child(2) .narrow {
+    grid-column: 2;
+    grid-row: 2;
+    height: 220px;
+  }
+
+  .home-page .footer-copyright{
+    font-size: 0.8rem !important;
+    
+    
+    }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+
+  /* כותרת ראשית */
+  .page_title {
+   font-size: clamp(1.65rem, 4vw, 3rem);
+   margin: 20px 5% 0.8rem;
+   text-align: center;
+ }
+
+ /* כותרת משנית */
+ .change-title {
+   margin: -15px auto;
+   font-size: 0.95rem;
+   
+   text-align: center;
+ 
+   
+}
+
+ /* פסקת פתיחה */
+ .opening_paragraph {
+   margin: -10px;
+   font-size: 0.65rem;
+   max-width: 65%;
+   text-align: center;
+   margin-top: -40px;
+ }
+
+ .opening_paragraph p{
+   line-height: 0.9rem;
+ }
+
+ 
+.map-wrapper {
+width: 100% !important;
+margin-left: 5rem !important;
+
+}
+
+.volunteer-map-section {
+ margin: 4rem -9rem;
+ padding: 0.5rem;
+ padding-top: 3rem;
+ height: 100%;
+}
+
+/* התאמת גודל הפופאפ למובייל */
+.leaflet-popup-content {
+ margin: 10px !important;
+ width: auto !important;
+ min-width: 200px !important;
+}
+
+/* התאמת גודל האייקונים במפה */
+.leaflet-marker-icon {
+ width: 20px !important;
+ height: 20px !important;
+ margin-left: -12px !important;
+ margin-top: -24px !important;
+}
+
+.content-grid {
+ grid-template-columns: 1fr;
+ gap: 10rem;
+}
+
+
+
+.content-wrapper {
+ order: 2;
+ gap: 2rem;
+}
+
+.map-headline {
+ font-size: 1.4rem;
+ margin: 0;
+ margin-top: -10rem;
+ text-align: center;
+}
+
+.map-text {
+ margin: 0 15px;
+ text-align: center;
+ font-size: 0.73rem;
+ max-width: 40%;
+}
+
+/* כרטיסי תכונות */
+.feature-cards {
+ margin: -10px auto;
+ width: 45%;
+ gap: 15px;
+ height: 100%;
+ padding-bottom: 2rem;
+}
+
+.first-card {
+ margin-top: -50px !important;
+ margin-bottom: -25px;
+ 
+}
+
+.first-card h3{
+  margin-bottom: -10px;
+  padding-top: 8px;
+  
+}
+
+.feature-card {
+ height: 75%;
+
+ padding: 0.05rem;
+ padding-right: 0.5rem !important;
+
+ text-align: center;
+ 
+}
+
+
+
+ .card-content h3 {
+   font-size: 0.8rem;
+   margin-bottom: -10px;
+   
+ }
+
+ .card-content p {
+   font-size: 0.75rem;
+   padding-right: 0.2rem;
+   line-height: 1rem;
+
+ }
+
+ /* אזור ההתנדבויות */
+ .areas-section {
+   margin-top: -20px;
+   padding: 0 15px;
+   margin-bottom: 50px;
+   
+ }
+
+ .areas-headline {
+   font-size: 1.3rem;
+   text-align: center;
+ }
+
+  .area-buttons {
+    gap: 0.6rem;
+    justify-content: center;
+    max-width: 200px;
+    
+  }
+
+ .home-page .area-buttons button {
+  margin: 0.3rem;
+  font-size: 0.8rem;
+  padding: 0.4rem 1.2rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* צל רך */
+}
+
+ /* כרטיסי מיקומי התנדבות */
+ .selected-area-container {
+width: 60% !important;
+ 
+}
+
+.location-card {
+  max-width: 100px !important;
+  min-height: 250px;
+  max-height: 450px;
+  
+}
+
+ .volunteering-in{
+   font-size: 1rem;
+   margin-top: -10px;
+   
+ }
+
+ .volunteering-image {
+ 
+   height: 40% !important;
+  
+   
+ }
+
+ .location-description {
+  
+   padding-bottom: 0.01rem !important;
+   font-size: 0.75rem !important;
+   line-height: 1.4 !important;
+   
+ }
+
+ 
+ .details-registration{
+  font-size: 0.9rem !important;
+  margin-top: 5px !important;
+  padding: 8px 15px 8px 15px !important;
+ }
+
+ .cancel-registration-inline{
+  font-size: 0.9rem !important;
+  margin-top: 0px !important;
+  margin-bottom: 5px !important;
+  
+ }
+
+ .locationName{
+  font-size: 0.8rem !important;
+}
+
+.type{
+font-size: 0.8rem !important;
+}
+
+
+
+
+ /* עיצוב חדש לגלריית תמונות - 2x2 גריד עם זוויות */
+ .image-section {
+  
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 15px;
+   row-gap: 15px !important;
+   padding: 40px 20px 35px 25px;
+   
+   
+ }
+
+ .row {
+   display: contents;
+ }
+
+ .image-item {
+   height: 100% !important;
+   width: 100%;
+   transform: rotate(-2deg);
+   transition: transform 0.3s ease;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* צל רך */
+ }
+
+ .image-item:nth-child(even) {
+   transform: rotate(2deg);
+ }
+
+
+ 
+
+ .image-item:hover {
+   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); 
+   transform: rotate(0) scale(1.05);
+   z-index: 1;
+ }
+
+ .image-item img {
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   filter: brightness(85%);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* צל רך */
+   transition: box-shadow 0.3s ease-in-out; /* אנימציה חלקה */
+ }
+
+ /* הסתרת התמונה החמישית במובייל */
+ .row:nth-child(2) .equal-wide:last-child {
+   display: none;
+ }
+
+ /* שינוי גדלים ספציפיים לתמונות */
+ .row:first-child .wide {
+   grid-column: 1;
+   grid-row: 1;
+   height: 220px;
+ }
+
+ .row:first-child .small-wide {
+   grid-column: 2;
+   grid-row: 1;
+   height: 220px;
+ }
+
+ .row:nth-child(2) .equal-wide:first-child {
+   grid-column: 1;
+   grid-row: 2;
+   height: 220px;
+ }
+
+ .row:nth-child(2) .narrow {
+   grid-column: 2;
+   grid-row: 2;
+   height: 220px;
+ }
+
+ .home-page .footer-copyright{
+  font-size: 0.8rem !important;
+  
+  
+  }
+
+}
