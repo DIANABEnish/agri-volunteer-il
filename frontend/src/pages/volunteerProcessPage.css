@@ -1,0 +1,1787 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+.process {
+  overflow-x: hidden;
+  width: 100%;
+}
+.process .site-header {
+  background: linear-gradient(135deg, #b89861, #b08539);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+  min-height: 80px;
+}
+
+.process .nav-site {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 0;
+  margin-left: 500px;
+}
+  
+  .process .nav-site ul {
+    margin-left: 2rem; /* Add space between items */
+  }
+  
+  .process .nav-site ul:last-child {
+    margin-left: 0; /* Remove margin from the last item */
+  }
+  .process .nav-site a,
+  .process .faq-title {
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem !important;
+    font-weight: 700;
+    text-decoration: none;
+    color: #f7f8fb;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: inline-flex; /* שימוש ב-inline-flex במקום block */
+    align-items: center;
+  }
+  
+  /* איפוס margin ספציפי ל-FAQ */
+  .process .faq-title {
+    margin: 10px 0 0 0;
+    
+  }
+
+.process .nav-site a:hover {
+   
+  background-color: rgba(228, 213, 195, 0.4) ;/* הוספת רקע בעת מעבר על הקישור */
+}
+
+.process .logo-container {
+  flex: 0 1 auto; /* קופסה עבור הלוגו */
+}
+
+.process .site-logo {
+  width: 125px;
+  max-width: 300px; /* הגדרת גודל מקסימלי ללוגו */
+  height: 135px !important; /* שומר על יחס הרוחב-גובה */
+  margin-right: 20px ;
+  margin-top: -30px;
+  transition: transform 0.3s ease;
+
+  }
+
+  
+.process .site-logo:hover {
+  transform: scale(1.1);
+}
+
+
+  .process .faq-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: -20px;
+    background-color:#e0e0e0;
+    opacity: 0.8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    min-width: 150px;
+    height: 90px;
+    padding: 10px;
+    line-height: 10px;
+    z-index: 1000;
+  }
+  
+  .process .faq-dropdown-menu a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem!important;
+    font-weight: 700;
+    display: block;
+    padding: 8px 8px !important;
+    text-decoration: none;
+    color: rgb(158, 106, 46);
+    text-align: center;
+  }
+  
+  .process .faq-dropdown-menu a:hover {
+    background-color: transparent;
+    transform: scale(1.05); /* הגדלה ב-5% */
+    transition: transform 0.2s ease; /* אנימציה חלקה */
+  }
+  
+
+  .process .dropdown-divider {
+    height: 1px;
+    background-color: #a7a2a2;
+    margin-top: 7px;
+    margin-bottom: -5px;
+    width: 100%;
+  }
+
+
+
+
+  
+  .registration_process {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+   
+  }
+  
+
+  
+  /* כותרת */
+ .process .title {
+
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif; 
+    font-weight: 500;
+    opacity: 0.7;
+    font-style: normal;
+    margin: 0;
+    padding: 0 20px; 
+    color: #8b9592;
+    text-shadow: 2px 2px 4px rgba(116, 115, 115, 0.3);  
+    font-size: 4.5rem !important;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    position: relative;
+   
+
+   
+  }
+
+  .title::before,
+  .title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 400px; /* אורך הקו */
+    height: 1px; /* גובה הקו */
+    background-color: #ccc; /* צבע הקו */
+  }
+  
+  .title::before {
+    left: 400px; /* מרחק מצד שמאל של הכותרת */
+  }
+  
+  .title::after {
+    right: 400px; /* מרחק מצד ימין של הכותרת */
+  }
+
+  .nav-pageDescription  {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    margin-right: 260px;
+    margin-bottom: 70px;
+    font-size: 1.2rem;
+    color:#6b7f7a;
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px rgba(203, 199, 199, 0.5); 
+    line-height: 1.7;
+    max-width: 550px;
+  }
+  .image-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s cubic-bezier(0.9, 0, 0.2, 1);
+    gap: 10px;
+}
+
+.carousel-item {
+    flex: 0 0 calc(25% - 10px);
+    max-width: calc(25% - 10px);
+}
+
+.carousel-image {
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    size: 40%;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(80%); /* כהות קלה */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* מונע תזוזה של הכפתור */
+    transform-origin: center;
+    outline: none;
+}
+
+.carousel-button:hover:not(:disabled) {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* מסיר כל אנימציה או תזוזה בהובר */
+    transform: translateY(-50%);
+}
+
+.carousel-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+  
+
+  .content_container {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  
+   
+  }
+  
+  .process h3 {
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif; 
+    font-weight: 500 !important;
+    opacity: 0.8;
+    font-style: normal;
+    margin: 0;
+    padding: 0 20px; 
+    color: #8b9592 !important;
+    text-shadow: 2px 2px 4px rgba(116, 115, 115, 0.3);    
+    font-size: 3.5rem;
+    margin-top: 70px;
+    margin-bottom: 75px;
+    position: relative;
+  
+   
+  }
+
+  .process h3::before,
+  .process h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 150px; /* אורך הקו */
+    height: 1px; /* גובה הקו */
+    background-color: #ccc; /* צבע הקו */
+  }
+  
+  .process h3::before {
+    left: 250px; /* מרחק מצד שמאל של הכותרת */
+  }
+  
+  .process h3::after {
+    right: 250px; /* מרחק מצד ימין של הכותרת */
+  }
+
+  
+  .process_list {
+    flex: 1;
+    list-style-type: none;
+    margin-top: -10px;
+    max-width: 600px;
+    padding: 0;
+    counter-reset: item;
+  }
+  
+  .process h4 {
+    font-family: 'Open Sans', sans-serif;
+    
+    font-weight: 500;
+    color: rgb(154, 161, 154);
+    font-size: 18px;
+    margin-bottom: 35px;
+    text-shadow: 2px 2px 4px rgba(141, 137, 137, 0.2);  
+  }
+  
+  .list_item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px 90px 10px 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+
+
+  .list_item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  
+.list_item:hover {
+  transform: translateY(-5px);
+}
+  
+  .list_item::before {
+    counter-increment: item;
+    content: counter(item);
+    color: #f5f9f8;
+    font-size: 1.3rem;
+    background-color: #dbdfdf;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    margin-right: 25px;
+  }
+  
+  .item_description {
+    margin-top: -25px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    max-width: 600px;
+    font-family: 'Roboto', sans-serif;
+    color:#6b7f7a;
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px rgba(203, 199, 199, 0.3); 
+
+  }
+  
+  .sub_list {
+    list-style-type: disc;
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+  
+
+
+  .thanks {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: #9ea2a1;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(141, 137, 137, 0.2);  
+    margin-bottom: 75px;
+    margin-top: 65px;
+    padding: 20px 20px 20px 20px;
+    background-color: #fff; /* צבע רקע עבור הטקסט */
+    border: 1px solid #8a6c42; /* צבע המסגרת */
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%); /* הופך את הפינות לאלכסוניות */
+  }
+  
+    .process .footer-copyright {
+      font-family: 'Open-Sans', sans-serif;
+      background-color:  #c3c5c4;
+      opacity: 0.8;
+      height: 20px;
+      padding-top: 5px;
+      padding-bottom: 30px;
+      margin-top:0;
+      font-style: italic;
+      color: rgb(68, 84, 79);
+      text-align: center;
+    }
+
+    .footer-copyright .hostages-icon {
+      width: 30px; /* ניתן לשנות את הגודל לפי הצורך */
+      height: 20px;
+      margin-right: 5px !important; /* רווח בין האייקון לטקסט */
+    }
+    
+
+     .process .web-link{
+      color: rgb(68, 84, 79);
+      text-decoration: underline;
+    }
+    .process .web-link:hover{
+      color: #987b3d;
+      text-decoration: none;
+    }
+
+
+    @media screen and (min-width: 2560px){
+
+     
+
+.process .site-header {
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+  
+}
+
+.process .site-logo {
+  width: 125px;
+  height: 135px !important;
+  margin-bottom: -2px;
+  
+}
+
+.process .nav-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+  margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+  position: absolute;
+  left: 49%;
+  transform: translateX(-50%);
+  height: 5%;
+}
+
+.process .nav-site a, .process .faq-title {
+  font-size: 1.1rem !important;
+  padding: 12px 15px;
+  margin-left: 2px;
+  white-space: nowrap;
+  position: relative;
+ 
+}
+
+.process .faq-title{
+  font-size: 1.1rem !important;
+}
+
+.process .faq-dropdown-menu {
+  
+  right: -40px;
+
+}
+.process .faq-dropdown-menu a {
+  font-size: 1rem !important;
+}
+    
+    
+      .process .nav-pageDescription {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 700px;
+      }
+
+      
+      .list_item:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+      }
+
+      .process .footer-copyright {
+        font-size: 1.3rem;
+       
+      }
+      .process .footer-copyright p{
+        margin-top: 7px;
+        
+      }
+    }
+ 
+  
+
+/* Large screens (1920px and larger) */
+@media screen and (min-width: 1921px) and (max-width: 2559px){
+
+  body, html {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* הוסיפי wrapper ראשי */
+.process {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+.process .site-header {
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+  
+}
+
+.process .site-logo {
+  width: 125px;
+  height: 135px !important;
+  margin-bottom: -2px;
+  
+}
+
+.process .nav-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+  margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5%;
+}
+
+.process .nav-site a, .process .faq-title {
+  font-size: 1.3rem;
+  padding: 12px 15px;
+  margin-left: 2px;
+  white-space: nowrap;
+  position: relative;
+ 
+}
+
+.process .faq-dropdown-menu {
+  
+  right: -10px;
+
+}
+.process .faq-dropdown-menu a {
+  font-size: 1.05rem !important;
+}
+
+  .process .nav-pageDescription {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
+    
+  }
+
+  
+  
+  .list_item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .process .footer-copyright{
+    font-size: 1.1rem !important;
+  }
+
+  .process .footer-copyright p{
+    margin-top: 7px;
+    
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px){
+
+
+  .process .site-header {
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+    
+  }
+  
+  .process .site-logo {
+    width: 125px;
+    height: 135px !important;
+    margin-bottom: -2px;
+    
+  }
+  
+  .process .nav-site {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+    margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+    position: absolute;
+    left: 48%;
+    transform: translateX(-50%);
+    height: 5%;
+  }
+  
+  .process .nav-site a, .process .faq-title {
+    font-size: 1.2rem;
+    padding: 12px 15px;
+    margin-left: 2px;
+    white-space: nowrap;
+    position: relative;
+   
+  }
+  
+  .process .faq-dropdown-menu {
+    
+    right: -10px;
+  
+  }
+
+  .process .title{
+    max-width: 600px;
+    font-size: 4.5rem !important;
+  }
+
+  .process .title::after,
+  .process .title::before{
+    width: 300px;
+  }
+
+  .process .title::after{
+    right: 350px;
+  }
+
+  .process .title::before{
+    left: 350px;
+  }
+
+
+  .process .nav-pageDescription {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
+  }
+
+ 
+  .list_item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .process .footer-copyright{
+    font-size: 1.1rem !important;
+   
+  }
+
+  .process .footer-copyright p{
+    margin-top: 7px;
+    
+  }
+
+}
+
+
+/* לפטופ בינוני */
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+
+
+.process .site-header {
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+  
+}
+
+.process .site-logo {
+  width: 125px;
+  height: 135px !important;
+  margin-bottom: -2px;
+  
+}
+
+.process .nav-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+  margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+  position: absolute;
+  left: 48%;
+  transform: translateX(-50%);
+  height: 5%;
+}
+
+.process .nav-site a, .process .faq-title {
+  font-size: 1.1rem !important;
+  padding: 12px 15px;
+  margin-left: 2px;
+  white-space: nowrap;
+  position: relative;
+ 
+}
+
+.process .faq-dropdown-menu {
+  
+  right: -10px;
+
+}
+
+.process .faq-dropdown-menu a{
+  font-size: 1rem !important;
+}
+
+
+
+  .process .title {
+    font-size: 4rem !important;
+  }
+
+  .process .title::after,
+  .process .title::before{
+    width: 200px;
+  }
+
+  .process .title::after{
+    right: 320px;
+  }
+
+  .process .title::before{
+    left: 320px;
+  }
+
+
+  .process .nav-pageDescription {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+  }
+
+ 
+  
+  .list_item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .process .footer-copyright{
+    font-size: 1.1rem !important;
+    
+  }
+
+  .process .footer-copyright p{
+    margin-top: 7px;
+    
+  }
+}
+
+
+/* טאבלט גדול / לפטופ קטן */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+
+.process .site-header {
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+  
+}
+
+.process .site-logo {
+  width: 125px;
+  height: 135px !important;
+  margin-bottom: -2px;
+  margin-right: -10px;
+  
+}
+
+.process .nav-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+  margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+}
+
+.process .nav-site a, .process .faq-title {
+  font-size: 1rem !important;
+  padding: 12px 15px;
+  margin-left: -30px;
+  white-space: nowrap;
+  position: relative;
+ 
+}
+
+.process .faq-dropdown-menu {
+  
+  right: -10px;
+
+}
+
+.process .faq-dropdown-menu a {
+  font-size: 1rem !important;
+  margin-right: -30px;
+}
+
+
+  .process .title {
+    font-size: 4rem !important;
+  }
+
+  .process .title::after,
+  .process .title::before{
+    width: 220px;
+  }
+
+  .process .title::after{
+    right: 300px
+    
+  }
+
+  .process .title::before{
+    left: 300px
+  }
+
+
+  .carousel-item {
+    flex: 0 0 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+    
+}
+
+
+
+.carousel-image {
+  
+ width: 90%;
+  height:100%;
+}
+
+
+
+  .next-button{
+    margin-right: 2%;
+  }
+
+  .prev-button{
+    margin-left: 4%;
+  }
+
+  .process h4{
+    font-size: 1.2rem ;
+    
+  }
+
+  .item_description{
+    font-size: 1.1rem;
+    padding-left: 10px;
+  }
+ 
+  .list_item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .process .thanks{
+    font-size: 1.2rem;
+  }
+
+  .process .footer-copyright{
+    font-size: 1rem !important;
+   
+    }
+
+    .process .footer-copyright p{
+      margin-top: 7px;
+      
+    }
+}
+
+/* טאבלט קטן */
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
+  .process .site-header {
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+        height: 100px;
+    
+  }
+  
+  .process .site-logo {
+    width: 105px;
+    height: 115px !important;
+    margin-bottom: -10px;
+    margin-right: -10px;
+    
+  }
+  
+  .process .nav-site {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%; /* או כל רוחב קבוע אחר שמתאים לעיצוב שלך */
+    margin: 0 auto !important; /* ביטול המרג'ין השלילי */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10%;
+    gap: 40px;
+  }
+  
+  .process .nav-site a, .process .faq-title {
+    font-size: 0.95rem !important;
+    padding: 12px 15px;
+    margin-left: -30px;
+    white-space: nowrap;
+    position: relative;
+   
+  }
+  
+  .process .faq-dropdown-menu {
+    
+    right: -10px;
+  
+  }
+  
+  .process .faq-dropdown-menu a {
+    font-size: 0.9rem !important;
+    margin-right: -30px;
+  }
+  
+  
+  .process .registration_process {
+    padding: 10px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .process .title {
+    width: 600px;  /* רוחב קבוע לאזור הכותרת */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.5rem !important;
+}
+
+.process .title::before {
+    left: 20px;  /* מיקום קבוע יחסית לכותרת */
+}
+
+.process .title::after {
+    right: 20px;  /* מיקום קבוע יחסית לכותרת */
+}
+
+  
+  .process .title::before,
+  .process .title::after {
+    width: 150px;
+  }
+
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+.process .carousel-item {
+    margin: 0;
+    padding: 0;
+    width: 50%;  /* מצמצם קצת את הרוחב של כל תמונה */
+}
+
+.carousel-item:nth-child(n+3) {
+    display: none;
+}
+
+.carousel-image {
+    margin: 0;
+    padding: 0;
+    width: 110%;
+    height: 90%;
+}
+
+.next-button{
+  margin-right: 12%;
+}
+
+.prev-button{
+  margin-left: 12%;
+}
+
+  .process h3{
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+
+  .process h3::before,
+  .process h3::after {
+    width: 100px;
+  }
+
+  .process h3::after{
+    right: 200px;
+  }
+
+  .process h3::before{
+    left: 200px;
+  }
+
+  .process .nav-pageDescription {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 60%;
+    font-size: 1.15rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  /* Process list adjustments */
+  .process_list {
+    padding: 0 10px;
+    width: 70%;
+    margin-right: 50px;
+  
+    
+  }
+
+  .process .list_item {
+    padding: 10px 70px 10px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    
+    
+  }
+
+  .process h4{
+    font-size: 1rem;
+
+  }
+
+  .item_description{
+    font-size: 1rem;
+    max-width: 400px;
+  }
+  
+  .list_item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .list_item::before {
+   
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  .process .footer-copyright{
+    font-size: 0.9rem !important;
+   
+    }
+
+    .process .footer-copyright p{
+      margin-top: 7px;
+      
+    }
+
+
+}
+
+
+/* מובייל גדול */
+@media screen and (min-width: 481px) and (max-width: 767px){
+
+  /* Mobile Navigation Styles */
+.process .title {
+  margin-top: 20px;
+  width: 400px;
+  font-size: 2.3rem !important;  /* רוחב קבוע לאזור הכותרת */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process .title::before {
+  left: 50px;  /* מיקום קבוע יחסית לכותרת */
+}
+
+.process .title::after {
+  right: 50px;  /* מיקום קבוע יחסית לכותרת */
+}
+
+
+.process .title::before,
+.process .title::after {
+  width: 70px;
+}
+  
+    .process .nav-pageDescription{
+      max-width: 70%; /* גמיש */
+      margin: 0 auto;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  
+    /* Ensure content stays within viewport */
+    .process .registration_process {
+      max-width: 100vw;
+      overflow-x: hidden;
+      padding: 10px;
+    }
+    
+
+    .process .carousel-container {
+      display: flex; 
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      margin-top: 20px;
+      margin-right: -100px;
+      gap: 20px; /* מוסיף מרווח בין הפריטים */
+     
+    }
+    
+    .process .carousel-item {
+      flex: 0 0 auto !important; /* שומר על הרוחב של הפריטים */
+      
+    }
+  
+    
+
+    .process .carousel-image {
+      margin-right: 40px;
+      justify-content: space-between;
+      gap: 30px !important;
+      width: 100%;
+      height: 100%; /* הגדר גובה רצוי */
+      object-fit:cover; /* או object-fit: cover; אם ברצונך למלא את המכל */
+    }
+    
+  
+    
+  
+  
+    .process .prev-button {
+      left: 55px;
+     
+  }
+  
+  .process .next-button {
+    right: 35px;
+  }
+  
+  
+    .process h3{
+      font-size: 2.1rem;
+      margin-top: -10px;
+      margin-bottom: 40px;
+    }
+    .process h3::before,
+    .process h3::after {
+      width: 70px;
+    }
+  
+    .process h3::before {
+      left: 150px !important;
+    }
+  
+    .process h3::after {
+      right: 150px;
+    }
+  
+    .process h4{
+      font-size: 0.9rem;
+      margin-right: -20px;
+    }
+  
+    .process .process_details{
+      max-width: 300px;
+      margin-right: 10px;
+      margin-top: -10px;
+      gap: 10px;
+    }
+
+    .process_list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .list_item {
+      margin-bottom: 20px;
+    }
+    
+    .list_item:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+  
+   
+  
+    .process .list_item::before{
+      margin-right: 15px;
+      width: 35px;
+      height: 35px;
+      
+    }
+  
+    .process .item_description{
+      padding-left: 10px;
+      margin-right: -20px;
+      font-size: 0.9rem;
+      margin-bottom: 3px;
+      line-height: 1.4;
+      
+    }
+  
+    .process .thanks{
+      font-size: 0.8rem !important;
+      text-align:center;
+      max-width: 250px;
+      padding-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-right: 20px;
+      
+    }
+
+    .process .footer-copyright{
+      font-size: 0.9rem;
+      
+    }
+
+    .process .footer-copyright p{
+      margin-top: 7px;
+      
+    }
+
+}
+
+
+
+@media screen and (min-width: 414px) and (max-width: 480px){
+
+/* Mobile Navigation Styles */
+.process .title {
+  margin-top: 20px;
+  width: 400px;
+  font-size: 2.3rem !important;  /* רוחב קבוע לאזור הכותרת */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process .title::before {
+  left: 70px;  /* מיקום קבוע יחסית לכותרת */
+}
+
+.process .title::after {
+  right: 70px;  /* מיקום קבוע יחסית לכותרת */
+}
+
+
+.process .title::before,
+.process .title::after {
+  width: 50px;
+}
+  
+    .process .nav-pageDescription{
+      max-width: 70%; /* גמיש */
+      margin: 0 auto;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  
+    /* Ensure content stays within viewport */
+    .process .registration_process {
+      max-width: 100vw;
+      overflow-x: hidden;
+      padding: 10px;
+    }
+    .carousel-container {
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      margin-top: 20px;
+    }
+  
+    
+  
+    .carousel-item {
+      flex: 0 0 60%;
+      max-width: 100%;
+    }
+  
+    
+  
+  
+    .prev-button {
+      left: 20px;
+  }
+  
+  .next-button {
+    right: 20px;
+  }
+  
+  
+    .process h3{
+      font-size: 2.1rem;
+      margin-top: -10px;
+      margin-bottom: 40px;
+    }
+    .process h3::before,
+    .process h3::after {
+      width: 30px;
+    }
+  
+    .process h3::before {
+      left: 150px !important;
+    }
+  
+    .process h3::after {
+      right: 150px;
+    }
+  
+    .process h4{
+      font-size: 0.9rem;
+      margin-right: -20px;
+    }
+  
+    .process .process_details{
+      max-width: 300px;
+      margin-right: 10px;
+      margin-top: -10px;
+      gap: 10px;
+    }
+
+    .process_list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .list_item {
+      margin-bottom: 20px;
+    }
+    
+    .list_item:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+  
+   
+  
+    .process .list_item::before{
+      margin-right: 15px;
+      width: 35px;
+      height: 35px;
+      
+    }
+  
+    .process .item_description{
+      padding-left: 10px;
+      margin-right: -20px;
+      font-size: 0.9rem;
+      margin-bottom: 3px;
+      line-height: 1.4;
+      
+    }
+  
+    .process .thanks{
+      font-size: 0.8rem !important;
+      text-align:center;
+      max-width: 250px;
+      padding-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-right: 20px;
+      
+    }
+    .process .footer-copyright{
+      font-size: 0.9rem;
+    }
+
+    .process .footer-copyright p{
+      margin-top: 7px;
+      
+    }
+
+}
+
+/* מובייל בינוני */
+@media screen and (min-width: 375px) and (max-width: 413px) {
+ 
+/* Mobile Navigation Styles */
+.process .title {
+  margin-top: 20px;
+  width:450px;
+  font-size: 2.3rem !important;  /* רוחב קבוע לאזור הכותרת */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process .title::before {
+  left: 60px;  /* מיקום קבוע יחסית לכותרת */
+}
+
+.process .title::after {
+  right: 60px;  /* מיקום קבוע יחסית לכותרת */
+}
+
+
+.process .title::before,
+.process .title::after {
+  width: 50px;
+}
+  
+    .process .nav-pageDescription{
+      max-width: 70%; /* גמיש */
+      margin: -10px auto;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+  
+    /* Ensure content stays within viewport */
+    .process .registration_process {
+      max-width: 100vw;
+      overflow-x: hidden;
+      padding: 10px;
+    }
+    .carousel-container {
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      margin-top: 20px;
+    }
+
+    .process .carousel-image {
+      margin-right: -5px;
+      width: 100%;
+      height: 130px; /* הגדר גובה רצוי */
+      object-fit:cover; /* או object-fit: cover; אם ברצונך למלא את המכל */
+    }
+    
+  
+    
+  
+    
+  
+    .carousel-item {
+      flex: 0 0 50%;
+      max-width: 100%;
+    }
+  
+    
+  
+  
+    .prev-button {
+      left: 35px;
+  }
+  
+  .next-button {
+    right: 35px;
+  }
+  
+  
+    .process h3{
+      font-size: 2.1rem;
+      margin-top: -10px;
+      margin-bottom: 40px;
+    }
+    .process h3::before,
+    .process h3::after {
+      width: 30px;
+    }
+  
+    .process h3::before {
+      left: 150px !important;
+    }
+  
+    .process h3::after {
+      right: 150px;
+    }
+  
+    .process h4{
+      font-size: 0.8rem;
+      margin-right: -20px;
+    }
+  
+    .process .process_details{
+      max-width: 290px;
+      margin-right: 10px;
+      margin-top: -10px;
+      gap: 10px;
+    }
+
+    .process_list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .list_item {
+      margin-bottom: 20px;
+    }
+    
+    .list_item:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+  
+   
+  
+    .process .list_item::before{
+      margin-right: 15px;
+      width: 35px;
+      height: 35px;
+      
+    }
+  
+    .process .item_description{
+    
+      padding-left: 10px;
+      margin-right: -20px;
+      font-size: 0.83rem;
+      margin-bottom: 1px;
+      line-height: 1.4;
+      
+    }
+  
+    .process .thanks{
+      font-size: 0.8rem !important;
+      text-align:center;
+      max-width: 200px;
+      padding-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-right: 20px;
+      
+    }
+
+    .process .footer-copyright{
+      font-size: 0.8rem;
+    }
+    .process .footer-copyright p{
+      margin-top: 7px;
+      
+    }
+
+}
+  /* אייפון SE, 6, 7, 8 */
+
+  /* מובייל קטן */
+@media screen and (min-width: 320px) and (max-width: 374px) 
+{
+/* Mobile Navigation Styles */
+.process .title {
+  margin-top: 20px;
+  width:270px;
+  font-size: 2.1rem !important;  /* רוחב קבוע לאזור הכותרת */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process .title::before {
+  left: 30px;  /* מיקום קבוע יחסית לכותרת */
+}
+
+.process .title::after {
+  right: 30px;  /* מיקום קבוע יחסית לכותרת */
+}
+
+
+.process .title::before,
+.process .title::after {
+  width: 50px;
+}
+  
+    .process .nav-pageDescription{
+      max-width: 80%; /* גמיש */
+      text-align:center !important;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 0.8rem;
+      margin-top: -10px;
+    }
+  
+    /* Ensure content stays within viewport */
+    .process .registration_process {
+      max-width: 100vw;
+      overflow-x: hidden;
+      padding: 10px;
+    }
+    .carousel-container {
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      margin-top: 20px;
+      
+    }
+  
+    
+    .process .carousel-image {
+      margin-right: -15px;
+      width: 110%;
+      height: 100%; /* הגדר גובה רצוי */
+      object-fit:cover; /* או object-fit: cover; אם ברצונך למלא את המכל */
+    }
+    
+  
+    
+    .carousel-item {
+      flex: 0 0 50%;
+      max-width: 100%;
+     
+    }
+  
+
+  
+    .prev-button {
+      left: 20px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  
+    .process h3{
+      font-size: 2rem;
+      margin-top: -10px;
+      margin-bottom: 40px;
+      margin-right: 10px;
+    }
+    .process h3::before,
+    .process h3::after {
+      width: 30px;
+    }
+  
+    .process h3::before {
+      left: 140px !important;
+    }
+  
+    .process h3::after {
+      right: 140px;
+    }
+  
+    .process h4{
+      font-size: 0.8rem;
+      margin-right: -20px;
+    }
+  
+    .process .process_details{
+      max-width: 270px;
+      margin-right: 5px;
+      margin-top: -10px;
+      gap: 10px;
+    }
+
+    .process_list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .list_item {
+      margin-bottom: 20px;
+    }
+    
+    .list_item:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+  
+   
+  
+    .process .list_item::before{
+      margin-right: 15px;
+      width: 35px;
+      height: 35px;
+      
+    }
+  
+    .process .item_description{
+    
+      padding-left: 10px;
+      margin-right: -20px;
+      font-size: 0.8rem;
+      margin-bottom: 1px;
+      line-height: 1.4;
+      
+    }
+  
+    .process .thanks{
+      font-size: 0.8rem !important;
+      text-align:center;
+      max-width: 200px;
+      padding-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-right: 20px;
+      
+    }
+
+    .process .footer-copyright{
+      font-size: 0.8rem;
+    }
+
+    .process .footer-copyright p{
+      margin-top: 7px;
+      
+    }
+}
+  
+
+/* Fix horizontal overflow for all screen sizes */
+.process {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.registration_process {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Ensure content container doesn't cause horizontal scroll */
+.content_container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
