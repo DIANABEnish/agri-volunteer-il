@@ -1,0 +1,193 @@
+/* Map wrapper styles */
+
+.custom-popup .type{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem ;
+    margin-top: -10px;
+    margin-bottom: 5px !important;
+    color: #56725a ;
+    font-weight: bold;
+    margin-right: -15px !important;
+   
+
+  }
+
+
+  .custom-popup .locationName{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    padding-top: 0.1%;
+    color: #56725a ;
+    font-weight: bold;
+    margin-right: -15px !important;
+
+  }
+
+  .custom-popup  .details-registration {
+   
+    font-size: 0.8rem !important;
+    
+    padding: 5px 10px !important;
+   
+    margin-top: 10px !important;
+    margin-right: -10px !important;
+   max-width: 250px;
+    
+  }
+
+  .custom-popup .cancel-registration-inline{
+    margin-top: -5px !important;
+  
+      font-size: 0.8rem !important;
+    
+      padding: 1px 10px !important;
+      margin-right: -10px !important;
+    
+  
+  }
+
+  .custom-popup .reg-message{
+    font-size: 0.7rem !important;
+    margin-top: 10px !important;
+    margin-right: -15px !important;
+  }
+
+
+
+  @media screen and (min-width: 481px) and (max-width: 767px){
+   
+}
+
+
+@media screen and (min-width: 414px) and (max-width: 480px){
+
+  .custom-popup{
+    width: 200px;
+    max-height: 30px !important;
+  
+  }
+
+  
+
+
+  .custom-popup .type{
+    font-size: 0.8rem ;
+    text-align: center;
+    margin-right: -2.5rem !important;
+
+  }
+
+
+  .custom-popup .locationName{
+   
+    font-size: 0.8rem;
+    padding-top: 0.1%;
+    margin-right: -2.5rem !important;
+    
+    
+
+  }
+
+  .custom-popup  .details-registration {
+   
+    font-size: 0.75rem !important;
+    
+    padding: 5px 8px !important;
+   
+    margin-top: 10px !important;
+    margin-right: -40px !important;
+   max-width: 170px;
+    
+  }
+
+  .custom-popup .cancel-registration-inline{
+    margin-top: -5px !important;
+  
+      font-size: 0.75rem !important;
+    
+      padding: 1px 8px !important;
+      margin-right: -40px !important;
+    
+  
+  }
+
+  .custom-popup .reg-message{
+    font-size: 0.7rem !important;
+    margin-top: 10px !important;
+    margin-right: -40px !important;
+  }
+
+
+
+   
+}
+
+ @media screen and (min-width: 375px) and (max-width: 413px){
+  
+ }
+
+  @media screen and (min-width: 320px) and (max-width: 374px){
+   
+
+    
+  .custom-popup{
+    width: 200px !important;
+
+  
+  }
+
+  
+
+
+  .custom-popup .type{
+    font-size: 0.8rem ;
+    text-align: center;
+    margin-right: -2.5rem !important;
+
+  }
+
+
+  .custom-popup .locationName{
+   
+    font-size: 0.8rem;
+    padding-top: -2rem !important;
+    margin-right: -2.5rem !important;
+    
+    
+
+  }
+
+  .custom-popup  .details-registration {
+   
+    font-size: 0.75rem !important;
+    
+    padding: 5px 8px !important;
+   
+    margin-top: 10px !important;
+    margin-right: -40px !important;
+   max-width: 170px;
+    
+  }
+
+  .custom-popup .cancel-registration-inline{
+    margin-top: -5px !important;
+  
+      font-size: 0.75rem !important;
+    
+      padding: 1px 8px !important;
+      margin-right: -40px !important;
+    
+  
+  }
+
+  .custom-popup .reg-message{
+    font-size: 0.7rem !important;
+    margin-top: 10px !important;
+    margin-right: -40px !important;
+  }
+
+
+  }
+
+
+

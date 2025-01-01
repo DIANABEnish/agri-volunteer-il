@@ -1,0 +1,713 @@
+
+.footer {
+    background-color: #5F7161; /* ירוק-אפור עמוק ומקצועי */
+    border-radius: 4px;
+    padding: 70px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: calc(40.33% - 45px);
+}
+
+.footer-section:first-child {
+    margin-right: -20px;
+    margin-left: 120px;
+}
+
+.footer-section:last-child {
+    margin-left: -70px;
+}
+
+.footer .footer-heading {
+    font-weight: bold;
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 1.4rem;
+    color: #E6E5E1; /* לבן עם גוון ירקרק עדין לכותרות */
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.footer .footer-text {
+    font-family: 'Open-Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 1rem;
+    color: #E6E5E1;
+    max-width: 500px;
+    line-height: 1.5rem;
+}
+
+.footer .footer-contact {
+    display: flex;
+    align-items: center;
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color:  #edf4f2;
+}
+.footer .footer-button {
+ 
+  flex-direction: column;
+  background-color: #738376 !important;
+  color: azure;
+  padding: 10px 1px;
+  max-width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  width: 60%;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+  box-shadow: 0 4px 15px  rgba(0,0,0,0.1);
+}
+
+.footer .footer-button:hover, 
+.footer .footer-button:focus {
+  background-color:  #748879 !important; /* חום כהה יותר בהובר */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transform: translateY(-1px);
+}
+
+.footer-contact svg {
+  margin-left: 10px;
+  color: #D0C9C0; /* גוון חום-זהב בהיר לאייקונים */
+}
+
+.footer .volunteer-link{
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif ;
+  font-size: 18px ;
+  font-weight: 600;
+  color:   #edf0ed;
+}
+
+.footer .volunteer-link:hover{
+    color: #d8dad9;
+}
+
+.footer .farmers-link{
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif ;
+  font-size: 18px ;
+  font-weight: 600;
+  color:  #edf0ed;
+}
+
+@media screen and (min-width: 2560px){
+
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2559px){
+
+  .footer {
+    
+    padding: 90px 0;
+    border-radius: 6px;
+  }
+
+  .footer-container {
+  
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .footer-section {
+    width: calc(40.33% - 60px);
+  }
+
+  .footer-section:first-child {
+    margin-right: -60px;
+    margin-left: 200px;
+  }
+
+  .footer-section:last-child {
+    margin-left: -200px;
+    margin-right: 60px;
+  }
+
+  .footer .footer-heading {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    letter-spacing: 0.6px;
+  }
+
+  .footer .footer-text {
+    text-align: right;
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.8rem;
+  }
+
+  .footer .footer-contact {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .footer .footer-button {
+    padding: 15px 2px;
+    max-width: 250px;
+    margin-bottom: 20px;
+    width: 65%;
+  }
+
+  .footer-contact svg {
+    margin-left: 15px;
+    transform: scale(1.2); /* הגדלת האייקונים ב-20% */
+  }
+
+  .footer .volunteer-link {
+    font-size: 22px;
+  }
+
+  .footer .farmers-link {
+    font-size: 22px;
+  }
+
+  /* הוספת hover effects משופרים למסכים גדולים */
+  .footer .footer-button:hover,
+  .footer .footer-button:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+
+  .footer .volunteer-link:hover,
+  .footer .farmers-link:hover {
+    transform: translateX(-5px);
+    transition: transform 0.3s ease;
+  }
+
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
+  .footer {
+  padding: 70px 40px;
+  }
+  .footer-section {
+   
+  width: calc(40.33% - 45px);
+  }
+  .footer-section:first-child {
+  margin-right: -20px;
+  margin-left: 120px;
+  }
+  .footer-section:last-child {
+  margin-left: -70px;
+  }
+  .footer .footer-heading {
+  font-size: 1.4rem;
+  }
+  .footer .footer-text {
+    text-align: right;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  }
+  .footer .footer-button {
+  max-width: 200px;
+  padding: 10px 1px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  width: 60%;
+  }
+  }
+  
+
+
+  @media (min-width: 1025px) and (max-width: 1199px){
+
+    .footer {
+      padding: 60px 0;
+    }
+  
+    .footer .footer-container {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 50px; /* מרווח מימין לכל הקונטיינר */
+      max-width: 1000px;
+    }
+  
+    .footer .footer-section {
+      width: calc(40% - 35px);
+    }
+  
+    /* החלק הראשון - אודות */
+    .footer .footer-section:first-child {
+      margin-right: 40px; /* מרווח חדש מימין */
+      margin-left: 40px;
+    }
+  
+    .footer .footer-text {
+      font-size: 0.9rem !important;
+      text-align:right;
+      line-height: 1.2rem;
+      max-width: 450px !important;
+      padding-right: -5px; /* מרווח נוסף לטקסט מימין */
+      padding-left: 40px;
+    }
+  
+    /* שאר הסגנונות נשארים ללא שינוי */
+    .footer-contact {
+      font-size: 0.9rem !important;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      
+    }
+  
+    .footer-contact svg {
+      margin-left: 8px;
+   
+      
+    }
+  
+    .footer-section:last-child {
+      margin-left: -10px;
+ 
+    }
+  
+    .footer .footer-button {
+      display: flex;
+      flex-direction: column;
+      column-gap: 10px;
+      max-width: 160px;
+      padding: 9px 1px;
+      margin-bottom: 14px;
+      width: 90%;
+    }
+  
+    .footer .volunteer-link,
+    .footer .farmers-link {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  
+    .footer .footer-heading {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    
+    }
+
+  }
+
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .footer {
+      padding: 60px 0;
+    }
+  
+    .footer .footer-container {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 30px; /* מרווח מימין לכל הקונטיינר */
+      max-width: 1000px;
+    }
+  
+    .footer .footer-section {
+      width: calc(40% - 35px);
+    }
+  
+    /* החלק הראשון - אודות */
+    .footer .footer-section:first-child {
+      margin-right: 10px; /* מרווח חדש מימין */
+      margin-left: 40px;
+    }
+  
+    .footer .footer-text {
+      font-size: 0.8rem !important;
+      text-align:right;
+      line-height: 1.2rem;
+      max-width: 400px !important;
+      padding-right: -5px; /* מרווח נוסף לטקסט מימין */
+      padding-left: 20px;
+    }
+  
+    /* שאר הסגנונות נשארים ללא שינוי */
+    .footer-contact {
+      font-size: 0.8rem !important;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      
+    }
+  
+    .footer-contact svg {
+      margin-left: 8px;
+   
+      
+    }
+  
+    .footer-section:last-child {
+      margin-left: -10px;
+ 
+    }
+  
+    .footer .footer-button {
+      display: flex;
+      flex-direction: column;
+      column-gap: 10px;
+      max-width: 140px;
+      padding: 9px 1px;
+      margin-bottom: 14px;
+      width: 90%;
+    }
+  
+    .footer .volunteer-link,
+    .footer .farmers-link {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+  
+    .footer .footer-heading {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    
+    }
+  }
+
+
+  @media screen and (min-width: 481px) and (max-width: 768px){
+    .footer {
+   
+      padding: 30px 5px;
+      padding-right: 5px;
+      
+    }
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        max-height: 750px;
+        
+        }
+        .footer-section {
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+        }
+      .footer-section:first-child
+     
+      {
+      margin: 0 0 20px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        margin-top: 30px;
+      }
+    
+      .footer-section:last-child{
+        margin: 0 0 30px 0;
+        margin-top: 20px !important;
+        margin-bottom: 30px;
+      }
+     
+      .footer .footer-contact{
+        justify-content: center;
+        font-size: 0.9rem !important;
+      }
+    
+      .footer .footer-contact:last-child{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        justify-content: center;
+      }
+    
+    
+    
+    
+      .footer .footer-heading {
+      font-size: 1.15rem;
+      }
+    
+    
+      .footer .footer-text {
+      font-size: 0.8rem;
+      line-height: 1.4rem;
+      max-width: 350px;
+      margin: 0 auto;
+      text-align: center;
+    
+      }
+      .footer .footer-button {
+        display: block;
+        margin: 0 auto 20px;
+        width: 170px;  /* רוחב קבוע לכפתורים */
+        text-align: center;
+      }
+    
+      /* מירכוז הטקסט בכפתורים */
+      .footer .volunteer-link,
+      .footer .farmers-link {
+        justify-content: center;
+        padding: 0 10px;
+        font-size: 0.95rem;
+      }
+
+  }
+
+
+  @media screen and (min-width: 414px) and (max-width: 480px){
+
+    .footer {
+   
+      padding: 30px 5px;
+      padding-right: 5px;
+      
+    }
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        max-height: 750px;
+        
+        }
+        .footer-section {
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+        }
+      .footer-section:first-child
+     
+      {
+      margin: 0 0 20px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        margin-top: 30px;
+      }
+    
+      .footer-section:last-child{
+        margin: 0 0 30px 0;
+        margin-top: 20px !important;
+        margin-bottom: 30px;
+      }
+     
+      .footer .footer-contact{
+        justify-content: center;
+        font-size: 0.9rem !important;
+      }
+    
+      .footer .footer-contact:last-child{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        justify-content: center;
+      }
+    
+    
+    
+    
+      .footer .footer-heading {
+      font-size: 1.1rem;
+      }
+    
+    
+      .footer .footer-text {
+      font-size: 0.8rem;
+      line-height: 1.4rem;
+      max-width: 350px;
+      margin: 0 auto;
+      text-align: center;
+    
+      }
+      .footer .footer-button {
+        display: block;
+        margin: 0 auto 20px;
+        width: 170px;  /* רוחב קבוע לכפתורים */
+        text-align: center;
+      }
+    
+      /* מירכוז הטקסט בכפתורים */
+      .footer .volunteer-link,
+      .footer .farmers-link {
+        justify-content: center;
+        padding: 0 10px;
+        font-size: 1rem;
+      }
+
+
+  }
+
+
+  @media screen and (min-width: 375px) and (max-width: 413px) {
+
+    
+    .footer {
+   
+      padding: 30px 5px;
+      padding-right: 5px;
+      
+    }
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        max-height: 750px;
+        
+        }
+        .footer-section {
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+        }
+      .footer-section:first-child
+     
+      {
+      margin: 0 0 20px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        margin-top: 30px;
+      }
+    
+      .footer-section:last-child{
+        margin: 0 0 30px 0;
+        margin-top: 20px !important;
+        margin-bottom: 30px;
+      }
+     
+      .footer .footer-contact{
+        justify-content: center;
+        font-size: 0.9rem !important;
+      }
+    
+      .footer .footer-contact:last-child{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        justify-content: center;
+      }
+    
+    
+    
+    
+      .footer .footer-heading {
+      font-size: 1.1rem;
+      }
+    
+    
+      .footer .footer-text {
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: center;
+    
+      }
+      .footer .footer-button {
+        display: block;
+        margin: 0 auto 20px;
+        width: 170px;  /* רוחב קבוע לכפתורים */
+        text-align: center;
+      }
+    
+      /* מירכוז הטקסט בכפתורים */
+      
+      .footer .farmers-link {
+        justify-content: center;
+        
+        font-size: 0.95rem;
+      }
+
+      .footer .volunteer-link{
+        justify-content: center;
+        margin-right: -25px !important;
+        font-size: 0.95rem;
+      }
+
+
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 374px){
+
+    .footer {
+   
+      padding: 50px 5px;
+      padding-right: 5px;
+      
+    }
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        max-height: 750px;
+        
+        }
+        .footer-section {
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+        }
+      .footer-section:first-child
+     
+      {
+      margin: 0 0 20px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        margin-top: 30px;
+      }
+    
+      .footer-section:last-child{
+        margin: 0 0 30px 0;
+        margin-top: 20px !important;
+        margin-bottom: 30px;
+      }
+     
+      .footer .footer-contact{
+        justify-content: center;
+        font-size: 0.9rem !important;
+      }
+    
+      .footer .footer-contact:last-child{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        justify-content: center;
+      }
+    
+    
+    
+    
+      .footer .footer-heading {
+      font-size: 1.1rem;
+      }
+    
+    
+      .footer .footer-text {
+      font-size: 0.78rem;
+      line-height: 1.3rem;
+      max-width: 260px;
+      margin: 0 auto;
+      text-align: center;
+    
+      }
+      .footer .footer-button {
+        display: block;
+        margin: 0 auto 20px;
+        width: 170px;  /* רוחב קבוע לכפתורים */
+        text-align: center;
+      }
+    
+      .footer .farmers-link {
+        justify-content: center;
+        
+        font-size: 0.9rem;
+      }
+
+      .footer .volunteer-link{
+        justify-content: center;
+        margin-right: -5px !important;
+        font-size: 0.9rem;
+      }
+
+
+  }
+
+  
+
+  
